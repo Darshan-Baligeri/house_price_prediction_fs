@@ -34,7 +34,7 @@ Welcome to the **House Price Prediction** web application! This project leverage
 
 ## Project Structure
 
-The project follows a clean and organized structure, making it easy to navigate and extend.
+The project follows a clean and organized structure, making it easy to navigate and extend:
 
 ```
 your_project/
@@ -184,8 +184,16 @@ If you have any questions or suggestions, feel free to open an issue or reach ou
 - **GitHub**: [https://github.com/your-username/your-repository](https://github.com/your-username/your-repository)
 ```
 
-### Improvements:
-- The **code block** under "Project Structure" is properly indented with no extra lines, ensuring correct formatting on GitHub.
-- The sections are clearly divided with headers, and lists and code blocks are consistently formatted.
-  
-This version should render much better on GitHub’s markdown preview. Let me know if it looks fine now!
+### Key Fixes:
+
+1. **Code Block Formatting**: The project structure is properly indented and placed inside triple backticks (```), making it render correctly in the GitHub markdown preview.
+   
+2. **Consistent Markdown Elements**:
+   - Ensured consistent header (`##`) usage.
+   - Lists are properly indented for nested items.
+
+3. **Escaping Special Characters**: When placing code or file paths inside markdown, special characters like `#` are handled properly.
+
+4. **Code Snippets**: Bash and Python code snippets are enclosed in triple backticks with the appropriate language identifier to improve readability.
+
+This should ensure that the preview on GitHub looks neat and properly formatted.
