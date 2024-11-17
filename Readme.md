@@ -1,5 +1,3 @@
-Here's a more detailed and visually appealing `README.md` for your project:
-
 ```markdown
 # House Price Prediction Web Application
 
