@@ -75,7 +75,7 @@ Before setting up the application, ensure that you have the following:
 
 1. **Clone the repository** to your local machine:
    ```bash
-   git clone https://github.com/your-username/your-repository.git
+   git clone https://github.com/Darshan-Baligeri/house_price_prediction_fs.git
    cd your-repository
    ```
 
@@ -181,7 +181,7 @@ Contributions are welcome! If you'd like to contribute to this project, feel fre
 
 If you have any questions or suggestions, feel free to open an issue or reach out directly.
 
-- **GitHub**: [https://github.com/your-username/your-repository](https://github.com/your-username/your-repository)
+- **GitHub**: [https://github.com/Darshan-Baligeri/house_price_prediction_fs](https://github.com/your-username/your-repository)
 ```
 
 ### Improvements:
