@@ -1,0 +1,77 @@
+ /* Global Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container Styling */
+.container {
+    @apply max-w-3xl mx-auto p-6 bg-white rounded-lg shadow-lg;
+}
+
+/* Header Styling */
+h1 {
+    @apply text-center text-3xl font-bold text-gray-800 mb-8;
+}
+
+/* Form Field Styling */
+form .form-group {
+    @apply mb-6;
+}
+
+/* Input Fields */
+form .form-control {
+    @apply h-12 px-4 text-base border border-gray-300 rounded-md transition duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-green-500;
+}
+
+/* Button Styling */
+button {
+    @apply w-full py-3 bg-green-500 text-white font-semibold rounded-md cursor-pointer transition duration-300 ease-in-out transform hover:bg-green-400 hover:scale-105;
+}
+
+/* Prediction Result Styling */
+.prediction-result {
+    @apply mt-8 p-6 bg-green-100 border border-green-500 rounded-md text-xl text-gray-800 text-center;
+}
+
+/* Navbar Styling */
+.navbar {
+    @apply bg-dark py-4;
+}
+
+.navbar-brand, .nav-link {
+    @apply text-white font-semibold text-uppercase;
+}
+
+.navbar-nav .nav-link {
+    @apply pr-4;
+}
+
+.navbar-nav .nav-link:hover {
+    @apply text-green-500;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        @apply m-4 p-4;
+    }
+
+    h1 {
+        @apply text-2xl;
+    }
+
+    button {
+        @apply py-2 text-base;
+    }
+
+    .navbar-nav {
+        @apply text-center;
+    }
+
+    .navbar-nav .nav-link {
+        @apply py-3;
+    }
+}

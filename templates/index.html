@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning Model Prediction</title>
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <style>
+        /* Neumorphism Effect */
+        .neumorph {
+            background: #1e1e1e; /* Darker background */
+            border-radius: 15px;
+            box-shadow: 8px 8px 20px rgba(0, 0, 0, 0.6), -8px -8px 20px rgba(30, 30, 30, 0.4);
+        }
+        .neumorph-dark {
+            background: #121212; /* Even darker background */
+            border-radius: 15px;
+            box-shadow: 8px 8px 25px rgba(0, 0, 0, 0.8), -8px -8px 25px rgba(20, 20, 20, 0.5);
+        }
+
+        /* Enhanced Background Animation */
+        @keyframes movingBackground {
+            0% { background-position: 0 0; }
+            25% { background-position: 100% 0; }
+            50% { background-position: 0 100%; }
+            75% { background-position: 100% 100%; }
+            100% { background-position: 0 0; }
+        }
+
+        body {
+            animation: movingBackground 8s ease infinite;
+            background: linear-gradient(45deg, #F44336, #2196F3, #4CAF50, #FFEB3B);
+            background-size: 300% 300%;
+        }
+
+        /* Floating Effect */
+        .float-effect {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .float-effect:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 18px rgba(0, 0, 0, 0.6);
+        }
+
+        /* Glassmorphism with a Dark Overlay */
+        .glass {
+            background: rgba(0, 0, 0, 0.6); /* Darkened background for better contrast */
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Button Styles */
+        .btn-glow {
+            background: #3b3b3b;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 25px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .btn-glow:hover {
+            transform: scale(1.1);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Dark Mode Button */
+        .dark-mode-btn {
+            background: #3b3b3b;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+        .dark-mode-btn:hover {
+            background: #505050;
+        }
+
+        /* Particle Animation */
+        .particle-effect {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.6);
+            animation: particle 3s ease-out infinite;
+        }
+
+        @keyframes particle {
+            0% {
+                transform: translate(-50%, -50%) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translate(-50%, -50%) scale(0);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-100 font-open-sans relative">
+
+    <!-- Floating Particle Effect -->
+    <div class="particle-effect" style="animation-delay: 0s;"></div>
+    <div class="particle-effect" style="animation-delay: 1s;"></div>
+    <div class="particle-effect" style="animation-delay: 2s;"></div>
+
+    <!-- Navbar -->
+    <nav class="bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 py-6 shadow-xl neumorph-dark">
+        <div class="container mx-auto px-6 flex justify-between items-center">
+            <a href="#" class="text-3xl font-semibold text-white hover:text-gray-300 transition-all">ML House Price Prediction</a>
+            <ul class="flex space-x-8 text-lg text-gray-200">
+                <li><a href="/" class="hover:text-gray-300 transition-all">Home</a></li>
+                <li><a href="/form" class="hover:text-gray-300 transition-all">Prediction Form</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto mt-20 text-center px-6">
+        <div class="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 text-white rounded-lg p-12 shadow-xl neumorph-dark">
+            <h1 class="text-5xl font-bold mb-6 text-yellow-400">House Price Prediction Made Easy</h1>
+            <p class="text-lg md:text-xl mb-8 text-gray-300">
+                Get accurate property price predictions in seconds using advanced machine learning algorithms. Begin by exploring our project or entering your own property details.
+            </p>
+            <a href="/form" class="inline-block btn-glow float-effect transform hover:scale-110">Start Predicting</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container mx-auto mt-16 px-6">
+        <div class="glass">
+            <h2 class="text-3xl font-semibold mb-6 text-white">About the Project</h2>
+            <p class="text-gray-100 leading-relaxed mb-6">
+                This web application uses <span class="font-semibold text-yellow-300">Flask</span> to provide predictions of house prices based on various property features, such as the number of rooms, area, and location. The machine learning model processes these inputs and returns an estimated property price.
+            </p>
+            <p class="text-gray-100 leading-relaxed mb-6">
+                With its simple form, users can easily enter property details and receive quick predictions. Whether you're buying, selling, or just curious about property values, our tool provides useful insights powered by cutting-edge AI technology.
+            </p>
+            <a href="/form" class="inline-block btn-glow mt-6">Try it Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 mt-16 neumorph-dark text-gray-300">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; 2024 Darshan J Baligeri. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const darkModeBtn = document.querySelector('.dark-mode-btn');
+        darkModeBtn.addEventListener('click', () => {
+            document.body.classList.toggle('dark');
+        });
+    </script>
+</body>
+</html>

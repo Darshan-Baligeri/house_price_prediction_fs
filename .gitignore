@@ -1,0 +1,47 @@
+# Python-related files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.pdb
+*.log
+
+# Virtual environment (ignore virtual environment folder to prevent uploading it to git)
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Flask-specific files
+instance/
+*.db
+*.sqlite3
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Python distribution packages
+*.egg
+*.egg-info
+dist/
+build/
+*.whl
+
+# Miscellaneous
+static/js/*.map  # Ignore source map files for JS (if present)
+
+# Render-specific files
+render.yaml  # If you are using Render's YAML configuration, you might not need this in git
+*.env         # Ignore environment files containing secrets or sensitive data
