@@ -183,9 +183,3 @@ If you have any questions or suggestions, feel free to open an issue or reach ou
 
 - **GitHub**: [https://github.com/Darshan-Baligeri/house_price_prediction_fs](https://github.com/your-username/your-repository)
 ```
-
-### Improvements:
-- The **code block** under "Project Structure" is properly indented with no extra lines, ensuring correct formatting on GitHub.
-- The sections are clearly divided with headers, and lists and code blocks are consistently formatted.
-  
-This version should render much better on GitHub’s markdown preview. Let me know if it looks fine now!
