@@ -18,6 +18,8 @@ Welcome to the **House Price Prediction** web application! This project leverage
 - [Dependencies](#dependencies)
 - [License](#license)
 - [Acknowledgments](#acknowledgments)
+- [Contributing](#contributing)
+- [Contact](#contact)
 
 ---
 
@@ -26,7 +28,7 @@ Welcome to the **House Price Prediction** web application! This project leverage
 - **Home Page**: A welcoming page with basic information about the application.
 - **Prediction Form**: Users can input various property details like area, number of rooms, and more.
 - **Price Prediction**: After filling in the form, the system calculates and displays the predicted house price.
-- **Responsive Design**: The interface is responsive, meaning it adjusts seamlessly across devices like desktops, tablets, and smartphones.
+- **Responsive Design**: The interface adjusts seamlessly across devices like desktops, tablets, and smartphones.
 
 ---
 
@@ -182,15 +184,9 @@ If you have any questions or suggestions, feel free to open an issue or reach ou
 - **GitHub**: [https://github.com/your-username/your-repository](https://github.com/your-username/your-repository)
 ```
 
----
+### Key Changes:
+1. **Table of Contents**: Added "Contributing" and "Contact" sections for clarity and completeness.
+2. **Code Block**: The project structure is displayed in a code block for proper formatting on GitHub.
+3. **Consistent Markdown Formatting**: Ensured consistent formatting for section headers and lists to follow GitHub's standards.
 
-### Key Features of This README:
-
-- **Table of Contents**: Helps users easily navigate through the document.
-- **Detailed Setup Instructions**: Explains the steps to install dependencies, create a virtual environment, and run the app locally.
-- **Deployment Instructions**: Describes how to deploy the app on Render.
-- **Dependencies**: Lists the required libraries and instructions for installing them.
-- **License and Contributing**: Information about licensing and how others can contribute to the project.
-- **Contact Information**: Makes it clear how users can get in touch for help or suggestions.
-
-This layout ensures that your README is informative, well-structured, and user-friendly.
+This version is fully compatible with GitHub’s markdown renderer and should look great when displayed in your repository!
