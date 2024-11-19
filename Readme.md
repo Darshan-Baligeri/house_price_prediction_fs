@@ -76,7 +76,7 @@ Before setting up the application, ensure that you have the following:
 1. **Clone the repository** to your local machine:
    ```bash
    git clone https://github.com/Darshan-Baligeri/house_price_prediction_fs.git
-   cd your-repository
+   cd house_price_prediction_fs
    ```
 
 2. **Create a virtual environment** (optional but highly recommended):
@@ -141,7 +141,7 @@ The following Python libraries are required for this project:
 - `Flask==2.3.2`: A lightweight web framework for building the app.
 - `pandas==1.5.3`: A powerful library for data manipulation, used here for processing input data.
 - `scikit-learn==1.1.2`: A machine learning library that provides the tools for creating and using models.
-- `requests==2.28.1`: A library for making HTTP requests, though it is not used in the core functionality of this app, it may be added in future for API calls.
+- `requests==2.28.1`: A library for making HTTP requests, though it is not used in the core functionality of this app, it may be added in the future for API calls.
 
 To install these dependencies, run:
 ```bash
@@ -176,10 +176,3 @@ Contributions are welcome! If you'd like to contribute to this project, feel fre
 5. Create a pull request.
 
 ---
-
-## Contact
-
-If you have any questions or suggestions, feel free to open an issue or reach out directly.
-
-- **GitHub**: [https://github.com/Darshan-Baligeri/house_price_prediction_fs](https://github.com/your-username/your-repository)
-```
